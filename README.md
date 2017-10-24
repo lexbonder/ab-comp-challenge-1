@@ -13,4 +13,4 @@ I used two different images, one for when the section was vertical and one for w
 
 # My Comp
 
-![my comp](images/my-screenshot.png "My Comp")
+![my comp](images/my-comp.png "My Comp")
