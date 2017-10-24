@@ -100,9 +100,9 @@ article img {
 }
 
 .right-side {
+  background: url(images/master-sword.jpg);
   align-items: center;
   background-position: center;
-  background: url(images/master-sword.jpg);
   display: flex;
   height: 100vh;
   justify-content: space-between;
@@ -188,9 +188,9 @@ article img {
   }
   
   .right-side {
+    background: url(images/majora.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    background: url(images/majora.jpg) no-repeat;
     height: 25vw;
     width: 100%;
   }
