@@ -1,26 +1,30 @@
-/*Horizontal picture, Separate buttons*/
-
 @font-face {
   font-family: "hylia-serif";
   src: url("fonts/HyliaSerifBeta-Regular.otf") format("opentype");
 }
+
 @font-face {
   font-family: "zelda-digital";
   src: url("fonts/ReturnofGanon.ttf");
 }
+
 @font-face {
   font-family: "zelda-symbols";
   src: url("images/HylianSymbols.ttf");
 }
+
 * {
   box-sizing: border-box;
 }
-body{
+
+body {
   margin: 0;
 }
+
 main {
   display: flex;
 }
+
 h1 {
   color: #fff;
   font-family: "hylia-serif", serif;
@@ -29,6 +33,7 @@ h1 {
   letter-spacing: 1px;overflow-x: 
   margin: 0px;
 }
+
 h2 {
   color: #fff;
   font-family: "zelda-symbols";
@@ -37,37 +42,42 @@ h2 {
   margin: 0px;
   text-align: center;
 }
-p{
+
+p {
   color: #fff;
   font-family: "zelda-digital", sans-serif;
   font-size: 20px;
   letter-spacing: 1.5px;
   line-height: 1.1em;
 }
+
 header {
+  background-color: #59A59D;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #59A59D;
   padding: 3vh 20px;
   width: 66.6666%;
 }
+
 header,
 article {
   height: 33.3333vh;
 }
+
 article {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
   width: 33.3333%;
 }
+
 button {
   background-color: transparent;
-  border: 2px solid #fff;
   border-radius: 0px;
+  border: 2px solid #fff;
   color: #fff;
   font-family: "zelda-digital", sans-serif;
   font-size: 1em;
@@ -75,10 +85,12 @@ button {
   margin-right: 10px;
   width: 100px;
 }
+
 article img {
   display: block;
   height: 69px;
 }
+
 .left-side {
   display: flex;
   flex-wrap: wrap;
@@ -86,33 +98,38 @@ article img {
   justify-content: center;
   width: 60%;
 }
+
 .right-side {
   align-items: center;
-  background: url(images/master-sword.jpg);
   background-position: center;
+  background: url(images/master-sword.jpg);
   display: flex;
   height: 100vh;
   justify-content: space-between;
   position: relative;
   width: 40%;
 }
+
 .page {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 10px;
-  width: 10px;
-  opacity: .5;
-  border-radius: 50%;
   background-color: white;
+  border-radius: 50%;
+  height: 10px;
+  opacity: .5;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 10px;
 }
+
 #page1 {
-  right: 45px;
   opacity: .9;
+  right: 45px;
 }
+
 #page2 {
   right: 30px;
 }
+
 .scroll {
   background-color: rgba(0,0,0,.5);
   border-radius: 50%;
@@ -121,23 +138,29 @@ article img {
   opacity: .7;
   width: 50px;
 }
+
 .button-wrapper {
   margin-top: 10px;
 }
+
 .article1,
 .article6 {
   background-color:  #22555A;
 }
+
 .article2,
 .article7 {
   background-color: #87B86C;
 }
+
 .article3 {
   background-color: #182708;
 }
+
 .article4 {
   background-color: #59A59D;
 }
+
 .article5 {
   background-color: #0F0E0F;
 }
@@ -147,24 +170,27 @@ article img {
     height: 20vw;
     width: 66.6666%;
   }
+  
   .right-side {
     width: 33.3333%
   }
 }
 
 @media (max-width: 1000px) {
-  main{
+  main {
     flex-direction: column-reverse;
     width: 100%;
   }
+  
   .left-side {
     height: 20vw;
     width: 100%;
   }
+  
   .right-side {
-    background: url(images/majora.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    background: url(images/majora.jpg) no-repeat;
     height: 25vw;
     width: 100%;
   }
@@ -176,36 +202,45 @@ article img {
     padding: 10px;
     width: 100%;
   }
+  
   h1 {
     font-size: 1.8em;
   }
+  
   p{
     margin: 5px 0;
   }
+  
   article {
     height: 160px;
     width: 50%;
   }
+  
   button {
     font-size: 20px;
-    margin: 6px 0 0 0;
     height: 40px;
+    margin: 6px 0 0 0;
   }
+  
   .left-side {
     flex-wrap: none;
   }
+  
   .right-side {
     height: 160px;
   }
-  .button-wrapper{
+  
+  .button-wrapper {
     display: flex;
     justify-content: space-around;
   }
+  
   .scroll {
     height: 35px;
     width: 35px;
   }
+  
   .article1{
-    width: 100%
+    width: 100%;
   }
 }
