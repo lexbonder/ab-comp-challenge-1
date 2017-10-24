@@ -1,3 +1,5 @@
+/*Horizontal picture, Separate buttons*/
+
 @font-face {
   font-family: "hylia-serif";
   src: url("fonts/HyliaSerifBeta-Regular.otf") format("opentype");
@@ -30,7 +32,7 @@ h2 {
   font-family: "zelda-symbols";
   font-size: 6em;
   font-weight: lighter;
-  margin-bottom: 0px;
+  margin: 0px;
   text-align: center;
 }
 p{
@@ -48,6 +50,9 @@ main {
   width: 60%;
 }
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #59A59D;
   padding: 3vh 20px;
   width: 66.6666%;
@@ -57,8 +62,12 @@ article {
   height: 33.3333vh;
 }
 article {
-  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 33.3333%;
 }
 section {
   align-items: center;
@@ -84,7 +93,6 @@ button {
 article img {
   display: block;
   height: 69px;
-  margin: 25% auto 0 auto;
 }
 .page {
   position: absolute;
@@ -111,22 +119,25 @@ article img {
   opacity: .7;
   width: 50px;
 }
-.article1{
-  background-color: #0F0E0F;
+.button-wrapper {
+  margin-top: 10px;
+}
+.article1,
+.article6 {
+  background-color:  #22555A;
 }
 .article2,
-.article6{
+.article7 {
   background-color: #87B86C;
 }
-.article3{
+.article3 {
   background-color: #182708;
 }
-.article4{
+.article4 {
   background-color: #59A59D;
 }
-.article5,
-.article7{
-  background-color: #22555A;
+.article5 {
+  background-color: #0F0E0F;
 }
 
 @media (max-width: 1250px) {
@@ -149,6 +160,9 @@ article img {
     width: 100%;
   }
   section {
+    background: url(images/majora.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 25vw;
     width: 100%;
   }
@@ -164,14 +178,9 @@ article img {
     width: 100%;
   }
   h1 {
-    font-size: 1.5em;
-  }
-  h2,
-  article img {
-    margin-top: 35px;
+    font-size: 1.8em;
   }
   p{
-    font-size: 16px;
     margin: 5px 0;
   }
   article {
@@ -182,8 +191,13 @@ article img {
     height: 160px;
   }
   button {
-    font-size: 1em;
-    margin-top: 6px;
+    font-size: 20px;
+    margin: 6px 0 0 0;
+    height: 40px;
+  }
+  .button-wrapper{
+    display: flex;
+    justify-content: space-around;
   }
   .scroll {
     height: 35px;
