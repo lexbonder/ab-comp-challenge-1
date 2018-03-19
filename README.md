@@ -1,4 +1,6 @@
-# ab-comp-challenge-1
+# Static Comp 1 - Alex Bonder - (FE Mod 1)
+
+## Synopsis
 
 This is my take on the static comp 1 challenge.
 
@@ -6,6 +8,16 @@ The part I'm particularly proud of is the fonts and symbols. All of the symbols 
 
 I used two different images, one for when the section was vertical and one for when it becomes horizontal. I did not change the color scheme because I think it would be too big of a change at the break point and could be disorienting. Both pictures are easily recognizable by fans of the franchise. 
 
+## Project Goals
+
+* Match the structure of the comp provided
+* Make the site responsive
+
+## Installation
+
+Fork or clone this project
+
+Open `index.html`
 
 # Original Comp
 
